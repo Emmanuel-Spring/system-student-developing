@@ -1,0 +1,35 @@
+<head th:insert="layout/head :: head-principal"></head>
+
+<body>
+
+<header th:insert="layout/navbar :: navbar-principal"></header>
+
+<h1 style="text-align: center; color: green;">Prueba de fragment</h1>
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h3>Encuentra el trabajo que andas buscando.</h3>
+          Puedes buscar por descripción y categoría.
+          <form class="form-inline">
+            <input type="text" class="form-control mb-3" id="exampleFormControlInput1" placeholder="Escriba una búsqueda">&nbsp;
+            <select class="custom-select custom-select mb-3">
+              <option selected>Seleccione una categoría</option>
+              <option value="1">Ventas</option>
+              <option value="2">Contabilidad</option>
+              <option value="3">Transporte</option>
+              <option value="4">Informática</option>
+              <option value="5">Construcción</option>
+            </select>&nbsp;
+            <button type="submit" class="btn btn-primary mb-3">Buscar</button>
+          </form>
+        </div>
+      </div>
+      <hr>
+
+
+
+<img th:src="@{/images/thymeleaf.png}" width="950" height="350">
+<footer th:insert="layout/footer :: piepagina-principal"></footer>
+
+</body>
